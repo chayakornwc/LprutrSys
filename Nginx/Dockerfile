@@ -1,6 +1,6 @@
 FROM chayakornlpru/lprutrsys
 
-FROM php:7.1.9-fpm-alpine
+
 
 MAINTAINER Ric Harvey <ric@ngd.io>
 
