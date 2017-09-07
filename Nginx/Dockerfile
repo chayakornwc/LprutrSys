@@ -1,4 +1,4 @@
-FROM chayakornlpru/lprutrsys
+FROM chayakornlpru/lprutrsys:lastest
 ARG DEBIAN_FRONTEND=noninteractive
 COPY files /
 ENV SSL_KEY=/ssl/ssl.key \
