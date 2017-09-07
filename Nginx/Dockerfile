@@ -1,6 +1,6 @@
-FROM chayakornlpru/lprutrsys:lastest
+FROM chayakornlpru/lprutrsys
 ARG DEBIAN_FRONTEND=noninteractive
-    DOCUMENT_ROOT=html
+    
 RUN \
     apt-get update && apt-get install -o Dpkg::Options::=--force-confdef -y nginx && \
     rm -rf /var/lib/apt/lists/* && \
