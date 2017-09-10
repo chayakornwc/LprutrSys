@@ -18,20 +18,16 @@ RUN dpkg-divert --local --rename --add /sbin/initctl && \
 
 	apt-get update && apt-get upgrade -y && \
 #install nginx
-	apt-get install -y python-setuptools \ 
-		curl \
+	apt-get install -y curl \
 		git \
 		nano \
 		sudo \
 		unzip \
 		openssh-server \
 		openssl \
-		supervisor \
-		nginx \
-		memcached \
-		ssmtp \
-		cron && \
-
+		
+		nginx &&\
+		
 	# Install PHP
 	apt-get install -y php7.1-fpm \
 		php7.1-mysql \
