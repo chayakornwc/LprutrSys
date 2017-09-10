@@ -1,4 +1,7 @@
 FROM chayakornlpru/lprutrsys
+MAINTAINER whitecat.chayakorn@gmail.com
+
+ENV DEBIAN_FRONTEN noninteractive
 COPY files /
 ENV DOCUMENT_ROOT=html
   rm -rf /var/lib/apt/lists/* && \
