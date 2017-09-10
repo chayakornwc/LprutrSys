@@ -17,7 +17,7 @@ RUN dpkg-divert --local --rename --add /sbin/initctl && \
 	LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php && \
 
 	apt-get update && apt-get upgrade -y && \
-
+#install nginx
 	apt-get install -y python-setuptools \ 
 		curl \
 		git \
