@@ -1,5 +1,8 @@
 FROM chayakornlpru/lprutrsys
-RUN \sed -i -r -e '/^user www-data;/d' /etc/nginx/nginx.conf && \
+COPY files /
+ENV DOCUMENT_ROOT=html
+  rm -rf /var/lib/apt/lists/* && \
+    sed -i -r -e '/^user www-data;/d' /etc/nginx/nginx.conf && \
     echo "daemon off;" >> /etc/nginx/nginx.conf && \
     sed -i -e '/sendfile on;/a\        client_max_body_size 0\;' /etc/nginx/nginx.conf && \
     sed -i -e 's/gzip on/#gzip on/' /etc/nginx/nginx.conf && \
@@ -11,3 +14,5 @@ RUN \sed -i -r -e '/^user www-data;/d' /etc/nginx/nginx.conf && \
     chmod -R 755 /hooks /init && \
     chmod 755 /var/www && \
     chmod 666 /etc/nginx/sites-enabled/site.conf
+
+EXPOSE 8080 8443
