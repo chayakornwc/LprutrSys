@@ -1,8 +1,5 @@
 FROM chayakornlpru/lprutrsys
-RUN \
-    apt-get update && apt-get install -o Dpkg::Options::=--force-confdef -y nginx && \
-    rm -rf /var/lib/apt/lists/* && \
-    sed -i -r -e '/^user www-data;/d' /etc/nginx/nginx.conf && \
+RUN \sed -i -r -e '/^user www-data;/d' /etc/nginx/nginx.conf && \
     echo "daemon off;" >> /etc/nginx/nginx.conf && \
     sed -i -e '/sendfile on;/a\        client_max_body_size 0\;' /etc/nginx/nginx.conf && \
     sed -i -e 's/gzip on/#gzip on/' /etc/nginx/nginx.conf && \
