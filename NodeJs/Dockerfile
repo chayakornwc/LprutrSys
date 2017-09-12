@@ -23,7 +23,7 @@ ENV NPM_CONFIG_LOGLEVEL info
 ENV NODE_VERSION 8.4.0
 
 
-  Run get-apt \
+  RUN mkdir  ${NODE_DIR} \
   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz" \
   && curl -SLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc" \
   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc \
