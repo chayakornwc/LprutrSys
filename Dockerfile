@@ -1,7 +1,6 @@
 FROM ubuntu:latest				
 MAINTAINER whitecat.chayakorn@gmail.com
 
-ENV DEBIAN_FRONTEN noninteractive
 
 RUN dpkg-divert --local --rename --add /sbin/initctl && \
 	ln -sf /bin/true /sbin/initctl && \
