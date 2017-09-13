@@ -3,10 +3,10 @@
 # Lpru Training Manager system
 
 
-## Development Environtment  : 
+## Development Environtment   
 ### FrontEnd
 Node:
-MongoDB[]
+MongoDB [mongo-express "DataStore Manager tool", Rest API "Application programming interface for Data Query" ]
 :"RestAPI"}, 
 BackEnd {Nginx webroxy, PHP-FPM, } Base on Ubuntu//
 # note 09-13-2017
