@@ -1,6 +1,6 @@
 
 ![(LPRU)](logo.png)
-# Lpru Training Manager system
+#                              Lpru Training Manager system
 
 
 Development Environtment  : FrontEnd{Node:MongoDB:"RestAPI"}, BackEnd {Nginx webroxy, PHP-FPM, } Base on Ubuntu//
