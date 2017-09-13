@@ -1,4 +1,4 @@
-FROM chayakornlpru/lprutrsys
+FROM chayakornlpru/lprutrsys_php
 MAINTAINER whitecat.chayakorn@gmail.com
 
 ENV DEBIAN_FRONTEN noninteractive
