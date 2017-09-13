@@ -1,5 +1,5 @@
 # LprutrSys
-![(LI)](logo.svg)
+![(LPRU)](logo.svg)
 
 
 Development Environtment  : FrontEnd{Node:MongoDB:"RestAPI"}, BackEnd {Nginx webroxy, PHP-FPM, } Base on Ubuntu//
