@@ -22,4 +22,4 @@ Mysql "Original Data Source"
  ![(UML1)](Drawing-Overview.png)
 
 ## Update 09-14-2017 
-Building Frontend Uncompleted, Fail Mongo configuration
+Frontend building  uncompleted,  "Mongo configuration Failed"
