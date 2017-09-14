@@ -4,6 +4,4 @@ COPY /src /src
 WORKDIR /src
 EXPOSE 8088
 
-CMD [ "node", "server.js" ] /
-ADD rootfs.tar.xz /
-CMD ["/bin/sh"]
+CMD [ "node", "server.js" ] 
