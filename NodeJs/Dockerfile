@@ -13,7 +13,7 @@ ENV MONGO_EXPRESS 0.42.2
 
 RUN npm install mongo-express  &&\ 
     npm install -g create-react-app &&\
-    npm create-react-app tr-lpru\
+    npm create-react-app tr-lpru
 WORKDIR /tr-lpru
 #database 
 VOLUME CREATE --name trainning-nrDB \
