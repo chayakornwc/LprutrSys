@@ -12,8 +12,8 @@ ENV ME_CONFIG_EDITORTHEME="default" \
 ENV MONGO_EXPRESS 0.42.2
 
 RUN npm install mongo-express  &&\ npm install -g create-react-app
-create-react-app my-app\
-workdir my-app/ \ 
+npm create-react-app tr-lpru\
+workdir tr-lpru/ \ 
 
 
 CMD [ "node", "server.js" ] 
