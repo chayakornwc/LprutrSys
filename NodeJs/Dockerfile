@@ -1,6 +1,6 @@
 FROM node:alpine
 MAINTAINER whitecat.chayakorn@gmail.com
-
+WORKDIR . /src
 EXPOSE 8088
 ENV ME_CONFIG_EDITORTHEME="default" \
     ME_CONFIG_MONGODB_SERVER="mongo" \
