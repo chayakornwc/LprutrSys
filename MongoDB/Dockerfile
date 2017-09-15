@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 MAINTAINER whitecat.chayakorn@gmail.com 
-apt-get update \
+RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
 		ca-certificates \
 		jq \
