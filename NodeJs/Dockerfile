@@ -14,7 +14,6 @@ ENV MONGO_EXPRESS 0.42.2
 
 RUN npm install mongo-express@$MONGO_EXPRESS
 
-WORKDIR /node_modules/mongo-express
 
 RUN cp config.default.js config.js
 
