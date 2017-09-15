@@ -10,13 +10,14 @@ ENV ME_CONFIG_EDITORTHEME="default" \
     VCAP_APP_HOST="0.0.0.0"
 
 ENV MONGO_EXPRESS 0.42.2
+CMD ["npm","start"]
 
-RUN npm install mongo-express  &&\ 
+RUN npm install mongo-express 
     
-WORKDIR lpru-tr\    
+WORKDIR /lpru-tr/public    
 
 #database 
 VOLUME CREATE --name trainning-nrDB \
 
 
-CMD [ "node", "server.js" ] 
+CMD ["node", "server.js" ] 
