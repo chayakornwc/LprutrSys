@@ -23,3 +23,6 @@ Mysql "Original Data Source"
 
 ## Update 09-14-2017 
 Frontend building  uncompleted,  "Mongo configuration Failed"
+
+## Update 09-15-2017 
+Service setup complete
