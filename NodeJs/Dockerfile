@@ -12,7 +12,7 @@ ENV ME_CONFIG_EDITORTHEME="default" \
 
 ENV MONGO_EXPRESS 0.42.2
 
-RUN npm install mongo-express@$MONGO_EXPRESS \
+RUN npm install mongo-express \
  cp config.default.js config.js
 
 CMD [ "node", "server.js" ] 
