@@ -1,7 +1,7 @@
 FROM chayakornlpru/lprutrsys_php
 MAINTAINER whitecat.chayakorn@gmail.com
 ENV DEBIAN_FRONTEN noninteractive
-VOLUME E:/DevelopEnvironment/trsys-src
+VOLUME E:/DevelopEnvironment/trsys-src:/var/www/html
 #COPY nginx.conf /etc/nginx/nginx.conf
 
 EXPOSE 8080 8443
