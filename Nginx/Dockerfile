@@ -1,8 +1,9 @@
-FROM chayakornlpru/lprutrsys_php
-MAINTAINER whitecat.chayakorn@gmail.com
-ENV DEBIAN_FRONTEN noninteractive
-VOLUME E:/DevelopEnvironment/trsys-src:/var/www/html
-#COPY nginx.conf /etc/nginx/nginx.conf
+FROM nginx:1.9
 
-EXPOSE 8080 8443
-CMD ["nginx", "-g", "daemon off;"]
+ADD ./nginx/ssl /etc/nginx/ssl
+
+ADD ./nginx/nginx_nossl.conf /etc/nginx/
+ADD ./nginx/nginx_ssl.conf /etc/nginx/
+ADD ./frontend/dist /static
+ADD ./nginx/setupconf.sh .
+RUN ./setupconf.sh
