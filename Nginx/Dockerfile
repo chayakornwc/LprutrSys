@@ -6,4 +6,4 @@ ADD ./nginx_nossl.conf /etc/nginx/
 ADD ./nginx_ssl.conf /etc/nginx/
 ADD ./frontend/dist /static
 ADD ./setupconf.sh .
-CMD["setupconf.sh"]
+CMD ["setupconf.sh"]
